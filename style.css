@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    background-image: url(./assets/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 75vh;
+}
+
+.hero__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+.hero__header {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    padding-top: 100px;
+}
+
+/* BLOG */
+.blog {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.blog__header {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    margin-bottom: 50px;
+}
+
+.blog__article {
+    display: flex;
+    gap: 30px;
+}
+
+.blog__image {
+    width: 50%;
+    object-fit: cover;
+    max-height: 470px;
+}
+
+.blog__wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+}
+
+.blog__info {
+    box-sizing: content-box;
+    max-width: 450px;
+}
+
+.blog__tag,
+.blog__date {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+    display: block;
+}
+
+.blog__date {
+    margin-bottom: 40px;
+}
+
+.blog__title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.blog__description {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.05em;
+    color: #565656;
+    display: inline;
+}
+
+.blog svg {
+    display: inline;
+}
+
+.second {
+    margin-top: 50px;
+    flex-direction: row-reverse;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    transform: translateX(1px);
+}
+
+/* LATEST */
+.latest,
+.popular {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.latest__header,
+.popular__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.latest__posts,
+.popular__posts {
+    display: flex;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.latest__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.latest__post {
+    width: 33%;
+}
+.latest__post,
+.popular__post {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.latest__heading,
+.popular__heading {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+}
+
+.latest__view,
+.latest__tag,
+.latest__date,
+.popular__view,
+.popular__tag,
+.popular__date {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+
+.latest__tag,
+.latest__date,
+.popular__tag,
+.popular__date {
+    font-size: 12px;
+}
+
+.latest__title,
+.popular__title {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.latest__text,
+.popular__text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+.popular__post {
+    width: 50%;
+}
+.popular__img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.latest__post-heading,
+.popular__post-heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 180px;
+    height: 46px;
+    background: #565656;
+    margin: 50px auto;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.popular__button:hover {
+    background-color: #ffffff;
+    color: #565656;
+}
+
+.info {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.info__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__designer p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    max-width: 470px;
+    margin-bottom: 10px;
+}
+
+.info__text p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+    max-width: 470px;
+}
+
+.footer {
+    background-color: #F4F4F4;
+    max-height: 300px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__header {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    padding-top: 70px;
+}
+
+.footer__contacts {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social {
+    border: 1px solid #565656;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #565656;
+}
+
+.footer__social:hover {
+    background-color: #565656;
+    fill: white;
+}
+
+.footer__copyright {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
